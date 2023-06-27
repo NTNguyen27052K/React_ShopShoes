@@ -1,0 +1,31 @@
+.card {
+  padding: 0;
+  border: transparent;
+  background-color: transparent;
+  .card__content {
+    &:hover .card-img-top {
+      transform: translateY(-90px) rotate(-20deg);
+    }
+    margin: 20px 20px 0 0;
+    border-radius: 20px;
+    background: #272d40;
+    .card-img-top {
+      transition: all 0.5s;
+    }
+    .card-body {
+      color: #fff;
+      .card-title {
+      }
+    }
+  }
+  .modal-content {
+    &:hover .card-img-top {
+      transform: translateY(-90px) rotate(-20deg);
+    }
+    background: #272d40;
+    color: #fff;
+    .card-img-top {
+      transition: all 0.5s;
+    }
+  }
+}

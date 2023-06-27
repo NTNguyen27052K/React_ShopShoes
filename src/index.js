@@ -6,7 +6,7 @@ import Footer from "./ShopStore/Components/Footer";
 import "./ShopStore/sass/main.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <div className="container" style={{ maxWidth: "1700px" }}>
+  <div className="container" style={{ maxWidth: "1450px" }}>
     <Header />
     <Body />
     <Footer />

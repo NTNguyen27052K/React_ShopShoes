@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+svg {
+  margin-top: 20px;
+  font-family: "Rubik Moonrocks", cursive;
+  width: 100%;
+  height: 100%;
+  text {
+    animation: stroke 10s infinite alternate;
+    stroke-width: 2;
+    stroke: #ff1de6;
+    font-size: 150px;
+  }
+}
+
+@keyframes stroke {
+  0% {
+    fill: #1fa2ff;
+    stroke: #12d8fa;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: #1fa2ff;
+    stroke: #12d8fa;
+  }
+  80% {
+    fill: #1fa2ff;
+    stroke: #12d8fa;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #1fa2ff;
+    stroke: #12d8fa;
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
