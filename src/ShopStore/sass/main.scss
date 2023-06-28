@@ -53,7 +53,7 @@
   background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.glow-on-hover.active:before {
   opacity: 1;
 }
 

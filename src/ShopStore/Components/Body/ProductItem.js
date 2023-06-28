@@ -9,13 +9,7 @@ export default class ProductItem extends Component {
             <div
               className="card__content"
               onClick={() => {
-                let a = document.querySelector(".modal").id;
-                console.log(a);
-                // if (a == "none") {
-                //   this.props.setStateModal("detail");
-                // } else {
-                //   this.props.setStateModal("home");
-                // }
+                this.props.setStateModal("", "active");
               }}
             >
               <img
@@ -51,6 +45,9 @@ export default class ProductItem extends Component {
                       className="btn-close"
                       data-bs-dismiss="modal"
                       aria-label="Close"
+                      onClick={() => {
+                        this.props.setStateModal("active", "");
+                      }}
                     />
                   </div>
                   <div className="modal-body">
@@ -72,6 +69,9 @@ export default class ProductItem extends Component {
                       type="button"
                       className="btn btn-secondary"
                       data-bs-dismiss="modal"
+                      onClick={() => {
+                        this.props.setStateModal("active", "");
+                      }}
                     >
                       Close
                     </button>
